@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
     public void setViews() {
         rb1 = (RadioButton) findViewById(R.id.rb1);
-        rb2 = (RadioButton) findViewById(R.id.rb2);//判断男女
+        rb2 = (RadioButton) findViewById(R.id.rb2);
         tvResult = (TextView) findViewById(R.id.tvResult);
         txt1 = (EditText)findViewById(R.id.edX);
         txt2 = (EditText)findViewById(R.id.edY);
@@ -38,8 +38,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
     @Override
     public void onClick(View v) {
-        double x = Double.parseDouble(txt1.getText().toString());//身高
-        double y = Double.parseDouble(txt2.getText().toString());//体重//体重除以身高的平方
+        double x = Double.parseDouble(txt1.getText().toString());
+        double y = Double.parseDouble(txt2.getText().toString());
         double res;
         String str = "Your BMI is";
         if(x<=0 || y<=0) {
@@ -51,8 +51,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         String str1 = String.format("%.2f",res);
         str = str + str1;
         if(rb1.isChecked())
-            res -= 1;//以女性为标准进行比较
-        //仅以女性作为评价标准
+            res -= 1;
+
         str +=   "体型:";
         if(res < 19)
             str += "过轻";
