@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -24,6 +28,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setViews();
+    }
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu,menu);
+//        menu.add(Menu.NONE,Menu.FIRST,1,"删除").setIcon(R.drawable.ic_baseline_30fps_24);
+        return true;
+
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.item_del:
+                txt1.setText(null);
+                txt2.setText(null);
+                return true;
+            default:return super.onOptionsItemSelected(item);
+        }
     }
     public void setViews() {
         rb1 = (RadioButton) findViewById(R.id.rb1);

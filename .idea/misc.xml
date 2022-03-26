@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project a/bmi2/app/src/main/res/drawable/ic_baseline_30fps_24.xml" value="0.1915" />
         <entry key="..\:/Project a/bmi2/app/src/main/res/layout/activity_main.xml" value="0.2758152173913043" />
+        <entry key="..\:/Project a/bmi2/app/src/main/res/menu/menu.xml" value="0.359375" />
+        <entry key="..\:/Project a/bmi2/app/src/main/res/menu/option_menu.xml" value="0.359375" />
+        <entry key="..\:/Project a/bmi2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2885" />
       </map>
     </option>
   </component>
